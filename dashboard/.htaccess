@@ -1,0 +1,47 @@
+RewriteEngine On    # Turn on the rewriting engine
+
+RewriteRule    ^signin/?$    login.php    [NC,L]   
+RewriteRule    ^signup/?$    register.php    [NC,L]   
+RewriteRule    ^signout/?$    signout.php    [NC,L]   
+RewriteRule    ^ForgotPassword/?$    forgot.php    [NC,L]
+ 
+RewriteRule    ^home/?$    home.php    [NC,L]   
+RewriteRule    ^channels/?$    channels.php    [NC,L]
+RewriteRule    ^channels/([0-9]+)/?$    channels.php?id=$1    [NC,L]
+RewriteRule    ^prmchannels/?$    prmchannels.php    [NC,L]
+RewriteRule    ^prmchannels/([0-9]+)/?$    prmchannels.php?id=$1    [NC,L]
+
+RewriteRule    ^changepassword/?$    changepass.php    [NC,L]   
+RewriteRule    ^updateprofile/?$    editprofile.php    [NC,L]   
+RewriteRule    ^upgrade/?$    upgrade.php    [NC,L]   
+
+
+RewriteRule    ^activity/?$    activity.php    [NC,L]   
+RewriteRule    ^sendmoney/?$    sendmoney.php    [NC,L]   
+RewriteRule    ^requestmoney/?$    requestmoney.php    [NC,L]   
+
+
+RewriteRule    ^refund/([A-Za-z0-9-]+)/?$    refund.php?id=$1    [NC,L]   
+RewriteRule    ^requesttome/?$    requesttome.php    [NC,L]   
+RewriteRule    ^requestreject/([A-Za-z0-9-]+)/?$    requestreject.php?id=$1    [NC,L]   
+RewriteRule    ^requestsend/([A-Za-z0-9-]+)/?$    requestsend.php?id=$1    [NC,L]   
+
+
+RewriteRule    ^verifyme/?$    verifyme.php    [NC,L]   
+
+
+
+RewriteRule    ^addmoney/?$    addmoney.php    [NC,L]   
+RewriteRule    ^add/paypal?$    addpaypal.php    [NC,L]   
+RewriteRule    ^add/perfectmoney?$    addpm.php    [NC,L]   
+RewriteRule    ^add/agents?$    agents.php    [NC,L]   
+
+
+RewriteRule    ^verify/?$    verifyphone.php    [NC,L]  
+
+
+
+RewriteRule    ^withrawmoney/?$    withrawmoney.php    [NC,L]   
+RewriteRule    ^wd/bank?$    wd-bank.php    [NC,L]   
+RewriteRule    ^wd/paypal?$    wd-paypal.php    [NC,L] 
+RewriteRule    ^wd/perfectmoney?$    wd-perfectmoney.php    [NC,L]   
